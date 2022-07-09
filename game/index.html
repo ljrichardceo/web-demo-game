@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" />
+    <title>Web Demo Game. Copyright 2022. All Rights Reserved.</title>
+    <script src="resource/js/jpegasm.js"></script>
+    <script src="resource/js/gl-matrix-min.js"></script>
+    <script src="resource/js/cannon.min.js"></script>
+    <script src="resource/js/library.min.js"></script>
+    <link rel="stylesheet" href="resource/css/theme.min.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <main>
+      <canvas id="canvas3d"></canvas>
+      <canvas id="canvas2d"></canvas>
+    </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service.min.js",{scope:"."}).then((registration)=>{
+          if(registration.installing){
+
+          }
+          if(registration.waiting){
+     
+          }
+          if(registration.active){
+          
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
